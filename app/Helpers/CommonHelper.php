@@ -8,7 +8,7 @@ class CommonHelper
     {
         return $date;
     }
-    function generateRandomString($length = 10)
+    public static function generateRandomString($length = 10)
     {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
