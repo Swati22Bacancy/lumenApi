@@ -27,6 +27,7 @@ $router->group(['middleware' => 'client.credentials'], function () use ($router)
     $router->get('/accounts/{account}', 'AccountController@show');
     $router->post('/updateaccount/{account}', 'AccountController@updateaccount');
     $router->delete('/accounts/{account}', 'AccountController@destroy');
+    $router->get('/accountscommon', 'AccountController@accountCommonFunction');
 
     /**
      * Routes for customers
@@ -37,6 +38,7 @@ $router->group(['middleware' => 'client.credentials'], function () use ($router)
     $router->get('/customers/{customer}', 'CustomerController@show');
     $router->post('/updatecustomer/{customer}', 'CustomerController@updatecustomer');
     $router->delete('/customers/{customer}', 'CustomerController@destroy');
+    $router->get('/customerscommon', 'CustomerController@customerCommonFunction');
 
     /**
      * Routes for users

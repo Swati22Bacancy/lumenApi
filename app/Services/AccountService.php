@@ -70,4 +70,9 @@ class AccountService
     {
         return $this->performRequest('DELETE', "/accounts/{$account}");
     }
+
+    public function callCommonFunction()
+    {
+        return $this->performRequest('GET', '/accountscommon');
+    }
 }

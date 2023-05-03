@@ -70,4 +70,9 @@ class CustomerService
     {
         return $this->performRequest('DELETE', "/customers/{$customer}");
     }
+
+    public function callCommonFunction()
+    {
+        return $this->performRequest('GET', '/customerscommon');
+    }
 }

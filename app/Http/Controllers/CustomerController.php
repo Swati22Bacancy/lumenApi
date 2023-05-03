@@ -52,5 +52,10 @@ class CustomerController extends Controller
         return $this->successResponse($this->customerService->deleteCustomer($customer));
     }
 
-    //
+    //Call Common function
+
+    public function customerCommonFunction()
+    {
+        return $this->successResponse($this->customerService->callCommonFunction());
+    }
 }

@@ -56,5 +56,10 @@ class AccountController extends Controller
         return $this->successResponse($this->accountService->deleteAccount($account));
     }
 
-    //
+    //Call Common function
+
+    public function accountCommonFunction()
+    {
+        return $this->successResponse($this->accountService->callCommonFunction());
+    }
 }
